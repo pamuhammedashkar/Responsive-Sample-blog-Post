@@ -420,6 +420,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 4rem;
+  color: #999;
+  font-size: 16px;
 }
 
 .footer a {
