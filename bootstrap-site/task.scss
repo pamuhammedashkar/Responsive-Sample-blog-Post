@@ -17,13 +17,13 @@
 
         margin-top: 1rem;
         width: 100% !important;
-        .stack-horizontal__imagecontainer{
+        .blog__imagecontainer{
             display: none !important;
         }
     }
-    .articles{
+    .articles-container{
         flex-direction: column;
-        .articles__sidebar{
+        .articles{
             // flex-grow: 4;
             width: 100% !important;
 
@@ -190,7 +190,7 @@ body {
             margin-top: 48px;
             margin-bottom: 16px;
             font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
-
+            font-style: italic;
         }
 
         .cardfirst__body{
@@ -316,11 +316,11 @@ body {
     
 //   }
 
-.articles{
+.articles-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .articles__sidebar{
+    .articles{
         // flex-grow: 4;
         text-align: left;
         width: 65%;
@@ -377,7 +377,7 @@ body {
             // margin-bottom: .5rem;
             color: rgb(33, 37, 41);
             font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-
+            font-style: italic;
         }
         .articles__heading{
             font-size: 2rem;
@@ -489,6 +489,7 @@ body {
             .blog-sidebar__heading{
                 font-family: "Playfair Display", Georgia, "Times New Roman", serif;
                 margin-bottom: 0;
+                font-style: italic;
             }
             .blog-sidebar__link{
                 color:rgb(0, 123, 255);

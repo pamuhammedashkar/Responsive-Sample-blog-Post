@@ -10,19 +10,19 @@
     margin-top: 1rem;
     width: 100% !important;
   }
-  .blog .stack-horizontal__imagecontainer {
+  .blog .blog__imagecontainer {
     display: none !important;
   }
-  .articles {
+  .articles-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .articles .articles__sidebar {
+  .articles-container .articles {
     width: 100% !important;
   }
-  .articles .blog-sidebar {
+  .articles-container .blog-sidebar {
     width: 100% !important;
   }
   .stack-horizontal {
@@ -189,6 +189,7 @@ body {
   margin-top: 48px;
   margin-bottom: 16px;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+  font-style: italic;
 }
 
 .main-container .cardfirst .cardfirst__header .cardfirst__body {
@@ -303,7 +304,7 @@ body {
   height: 250px;
 }
 
-.main-container .articles {
+.main-container .articles-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,12 +315,12 @@ body {
           justify-content: space-between;
 }
 
-.main-container .articles .articles__sidebar {
+.main-container .articles-container .articles {
   text-align: left;
   width: 65%;
 }
 
-.main-container .articles .articles__sidebar .articles__title {
+.main-container .articles-container .articles .articles__title {
   color: #212529;
   font-size: 2.5rem;
   margin-top: 0 !important;
@@ -327,54 +328,55 @@ body {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.main-container .articles .articles__sidebar .articles__date {
+.main-container .articles-container .articles .articles__date {
   color: #999;
   margin-top: -10px;
 }
 
-.main-container .articles .articles__sidebar .articles__date .articles__author {
+.main-container .articles-container .articles .articles__date .articles__author {
   color: #007bff;
 }
 
-.main-container .articles .articles__sidebar .articles__blue-text {
+.main-container .articles-container .articles .articles__blue-text {
   color: #007bff;
 }
 
-.main-container .articles .articles__sidebar .articles__bold {
+.main-container .articles-container .articles .articles__bold {
   font-weight: bold;
 }
 
-.main-container .articles .articles__sidebar .articles__main-heading {
+.main-container .articles-container .articles .articles__main-heading {
   border-bottom: 1px solid #dee2e6 !important;
   margin-bottom: 19px;
   padding-bottom: 11px;
   font-size: 28px;
   color: #212529;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-style: italic;
 }
 
-.main-container .articles .articles__sidebar .articles__heading {
+.main-container .articles-container .articles .articles__heading {
   font-size: 2rem;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.main-container .articles .articles__sidebar .articles__subheading {
+.main-container .articles-container .articles .articles__subheading {
   font-size: 1.75rem;
   margin-bottom: .5rem;
   color: #212529;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.main-container .articles .articles__sidebar .articles__footer {
+.main-container .articles-container .articles .articles__footer {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.main-container .articles .articles__sidebar .articles__footer .articles__button {
+.main-container .articles-container .articles .articles__footer .articles__button {
   text-decoration: none;
 }
 
-.main-container .articles .articles__sidebar .articles__footer .articles__buttonEnable {
+.main-container .articles-container .articles .articles__footer .articles__buttonEnable {
   border: .1rem solid;
   color: #007bff;
   border-color: #007bff;
@@ -383,7 +385,7 @@ body {
   padding: 9px 15px;
 }
 
-.main-container .articles .articles__sidebar .articles__footer .articles__buttonEnable:hover {
+.main-container .articles-container .articles .articles__footer .articles__buttonEnable:hover {
   background: #007bff;
   color: white;
   border-radius: 2rem;
@@ -392,7 +394,7 @@ body {
   border: none;
 }
 
-.main-container .articles .articles__sidebar .articles__footer .articles__buttonDisable {
+.main-container .articles-container .articles .articles__footer .articles__buttonDisable {
   border: .1rem solid;
   border-radius: 2rem;
   padding: 9px 15px;
@@ -400,22 +402,22 @@ body {
   background-color: transparent;
 }
 
-.main-container .articles .blog-sidebar {
+.main-container .articles-container .blog-sidebar {
   width: 30%;
 }
 
-.main-container .articles .blog-sidebar .blog-sidebar__details {
+.main-container .articles-container .blog-sidebar .blog-sidebar__details {
   font-family: "-apple-system,BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   margin-top: 5px;
 }
 
-.main-container .articles .blog-sidebar .blog-sidebar__element--greybg {
+.main-container .articles-container .blog-sidebar .blog-sidebar__element--greybg {
   background-color: #f8f9fa !important;
   margin-top: 33px;
   padding-left: 10px;
 }
 
-.main-container .articles .blog-sidebar .blog-sidebar__element {
+.main-container .articles-container .blog-sidebar .blog-sidebar__element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,12 +427,13 @@ body {
           flex-direction: column;
 }
 
-.main-container .articles .blog-sidebar .blog-sidebar__element .blog-sidebar__heading {
+.main-container .articles-container .blog-sidebar .blog-sidebar__element .blog-sidebar__heading {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   margin-bottom: 0;
+  font-style: italic;
 }
 
-.main-container .articles .blog-sidebar .blog-sidebar__element .blog-sidebar__link {
+.main-container .articles-container .blog-sidebar .blog-sidebar__element .blog-sidebar__link {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
@@ -439,7 +442,7 @@ body {
   line-height: 1.5;
 }
 
-.main-container .articles .blog-sidebar .blog-sidebar__element .blog-sidebar__link:hover {
+.main-container .articles-container .blog-sidebar .blog-sidebar__element .blog-sidebar__link:hover {
   text-decoration: underline;
 }
 
